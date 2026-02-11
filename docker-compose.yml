@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: ensolvers_user
+      POSTGRES_PASSWORD: ensolvers_password
+      POSTGRES_DB: notes_db
+    ports:
+      - "5432:5432"
